@@ -1,0 +1,166 @@
+WARNING: System properties and/or JVM args set.  Consider using --dry-run or --exec
+0    INFO  (main) [   ] o.e.j.u.log Logging initialized @556ms
+166  INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+181  WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+183  INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Users/deshetti/Projects/solr/server/contexts/] at interval 0
+959  INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+968  WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@754ba872{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,STARTING}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp} has uncovered http methods for path: /
+1001 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1540011289@5bcab519
+1084 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+1085 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/deshetti/Projects/solr/server/solr
+1088 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/deshetti/Projects/solr/server/solr/'
+1452 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/deshetti/Projects/solr/server/solr/solr.xml
+1666 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /Users/deshetti/Projects/solr/server/solr
+1784 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1165303897
+1785 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/deshetti/Projects/solr/server/solr/]
+1785 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /Users/deshetti/Projects/solr/server/solr/lib
+1785 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /Users/deshetti/Projects/solr/server/solr/lib).
+1862 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2114 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2125 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2126 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2130 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2130 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2289 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /Users/deshetti/Projects/solr/server/solr
+2417 INFO  (main) [   ] o.a.s.c.SolrCore Created CoreDescriptor: {name=yojana, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/Users/deshetti/Projects/solr/server/solr/yojana, absoluteInstDir=/Users/deshetti/Projects/solr/server/solr/yojana/, dataDir=data/}
+2420 INFO  (main) [   ] o.a.s.c.CoresLocator Found core yojana in /Users/deshetti/Projects/solr/server/solr/yojana/
+2421 INFO  (main) [   ] o.a.s.c.CoresLocator Found 1 core definitions
+2425 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/deshetti/Projects/solr/server/solr/yojana/'
+2427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/deshetti/Projects/solr/server
+2427 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2494 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@754ba872{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp}
+2535 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@74d1dc36{HTTP/1.1}{0.0.0.0:8983}
+2535 INFO  (main) [   ] o.e.j.s.Server Started @3093ms
+2582 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig current version of requestparams : 0
+2585 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Adding specified lib dirs to ClassLoader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/apache-mime4j-core-0.7.2.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/apache-mime4j-dom-0.7.2.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/aspectjrt-1.8.0.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/bcmail-jdk15-1.45.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/bcprov-jdk15-1.45.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/boilerpipe-1.1.0.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/commons-compress-1.8.1.jar' to classloader
+2605 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/fontbox-1.8.8.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/icu4j-54.1.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/isoparser-1.0.2.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/java-libpst-0.8.1.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/jdom-1.0.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/jempbox-1.8.8.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/jmatio-1.0.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/juniversalchardet-1.0.3.jar' to classloader
+2606 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/metadata-extractor-2.6.2.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/pdfbox-1.8.8.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/poi-3.11.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/poi-ooxml-3.11.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/poi-ooxml-schemas-3.11.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/poi-scratchpad-3.11.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/rome-1.0.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/tagsoup-1.2.1.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/tika-core-1.7.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/tika-java7-1.7.jar' to classloader
+2607 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/tika-parsers-1.7.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/tika-xmp-1.7.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/vorbis-java-core-0.6.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/vorbis-java-tika-0.6.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/xercesImpl-2.9.1.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/xmlbeans-2.6.0.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/xmpcore-5.1.2.jar' to classloader
+2608 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/extraction/lib/xz-1.5.jar' to classloader
+2624 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/dist/solr-cell-5.3.1.jar' to classloader
+2630 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/attributes-binder-1.2.1.jar' to classloader
+2630 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/carrot2-mini-3.9.0.jar' to classloader
+2630 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/hppc-0.5.2.jar' to classloader
+2630 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/jackson-core-asl-1.9.13.jar' to classloader
+2630 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/jackson-mapper-asl-1.9.13.jar' to classloader
+2631 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/mahout-collections-1.0.jar' to classloader
+2631 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/mahout-math-0.6.jar' to classloader
+2631 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/clustering/lib/simple-xml-2.7.jar' to classloader
+2631 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/dist/solr-clustering-5.3.1.jar' to classloader
+2631 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/langid/lib/jsonic-1.2.7.jar' to classloader
+2631 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/langid/lib/langdetect-1.1-20120112.jar' to classloader
+2632 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/dist/solr-langid-5.3.1.jar' to classloader
+2647 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/velocity/lib/commons-beanutils-1.8.3.jar' to classloader
+2647 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/velocity/lib/commons-collections-3.2.1.jar' to classloader
+2647 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/velocity/lib/velocity-1.7.jar' to classloader
+2647 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/contrib/velocity/lib/velocity-tools-2.0.jar' to classloader
+2648 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrResourceLoader Adding 'file:/Users/deshetti/Projects/solr/dist/solr-velocity-5.3.1.jar' to classloader
+3158 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 5.3.1
+3268 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.Config Loaded SolrConfig: solrconfig.xml
+3298 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema Reading Solr Schema from /Users/deshetti/Projects/solr/server/solr/yojana/conf/managed-schema
+3354 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema [yojana] Schema name=example-data-driven-schema
+3948 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.IndexSchema unique key field: id
+4176 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+4179 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.s.FileExchangeRateProvider Reloading exchange rates from file currency.xml
+4199 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.ConfigSetProperties Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/Users/deshetti/Projects/solr/server/solr/yojana/conf'
+4200 INFO  (coreLoadExecutor-6-thread-1) [   ] o.a.s.c.CoreContainer Creating SolrCore 'yojana' using configuration from instancedir /Users/deshetti/Projects/solr/server/solr/yojana/
+4200 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore solr.NRTCachingDirectoryFactory
+4232 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore [[yojana] ] Opening new SolrCore at [/Users/deshetti/Projects/solr/server/solr/yojana/], dataDir=[null]
+4236 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.JmxMonitoredMap No JMX servers found, not exposing Solr information with JMX.
+4239 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore [[yojana] ] Added SolrEventListener for newSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+4239 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore [[yojana] ] Added SolrEventListener for firstSearcher: [org.apache.solr.core.QuerySenderListener{queries=[]}]
+4249 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.CachingDirectoryFactory return new directory for /Users/deshetti/Projects/solr/server/solr/yojana/data
+4262 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore New index directory detected: old=null new=/Users/deshetti/Projects/solr/server/solr/yojana/data/index/
+4263 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.CachingDirectoryFactory return new directory for /Users/deshetti/Projects/solr/server/solr/yojana/data/index
+4298 INFO  (OldIndexDirectoryCleanupThreadForCore-yojana) [   x:yojana] o.a.s.c.SolrCore Looking for old index directories to cleanup for core yojana in /Users/deshetti/Projects/solr/server/solr/yojana/data/
+4301 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag queryResponseWriter : 'velocity' created with startup=lazy 
+4303 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+4461 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.p.UpdateRequestProcessorChain creating updateRequestProcessorChain "add-unknown-fields-to-the-schema"
+4545 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore no updateRequestProcessorChain defined as default, creating implicit default
+4611 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+4616 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+4617 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+4617 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.l.XMLLoader xsltCacheLifetimeSeconds=60
+4628 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/update/extract' created with startup=lazy 
+4631 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/analysis/field' created with startup=lazy 
+4631 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/analysis/document' created with startup=lazy 
+4633 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/spell' created with startup=lazy 
+4633 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/tvrh' created with startup=lazy 
+4633 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/terms' created with startup=lazy 
+4633 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.PluginBag requestHandler : '/elevate' created with startup=lazy 
+4633 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.RequestHandlers Registered paths: /admin/mbeans,/browse,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/elevate,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/spell,/update/csv,/tvrh,/select,/admin/segments,/admin/system,/replication,/config,/stream,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms,/update/extract
+4634 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+4656 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+4656 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+4672 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore Hard AutoCommit: if uncommited for 15000ms; 
+4673 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore Soft AutoCommit: disabled
+4737 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/server/solr/yojana/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@541ed05c; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+4737 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.SolrCore newest commit generation = 1
+4750 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.s.SolrIndexSearcher Opening Searcher@71e59cbe[yojana] main
+4794 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/deshetti/Projects/solr/server/solr/yojana/conf
+4794 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.r.RestManager Initializing RestManager with initArgs: {storageDir=/Users/deshetti/Projects/solr/server/solr/yojana/conf}
+4822 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.r.ManagedResourceStorage Reading _rest_managed.json using file:dir=/Users/deshetti/Projects/solr/server/solr/yojana/conf
+4822 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.r.RestManager Initializing 0 registered ManagedResources
+4867 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+4913 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+4919 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.c.SpellCheckComponent No queryConverter defined, using default converter
+4922 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /Users/deshetti/Projects/solr/server/solr/yojana/conf/elevate.xml
+4976 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.h.ReplicationHandler Commits will be reserved for  10000
+4985 INFO  (searcherExecutor-7-thread-1-processing-x:yojana) [   x:yojana] o.a.s.c.SolrCore QuerySenderListener sending requests to Searcher@71e59cbe[yojana] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+4985 INFO  (searcherExecutor-7-thread-1-processing-x:yojana) [   x:yojana] o.a.s.c.SolrCore QuerySenderListener done.
+4985 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.UpdateLog Looking up max value of version field to seed version buckets
+4985 INFO  (searcherExecutor-7-thread-1-processing-x:yojana) [   x:yojana] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+4985 INFO  (searcherExecutor-7-thread-1-processing-x:yojana) [   x:yojana] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+4985 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.VersionInfo Refreshing highest value of _version_ for 65536 version buckets from index
+4986 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.VersionInfo No terms found for _version_, cannot seed version bucket highest value from index
+4986 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1514979387028537344
+4986 INFO  (searcherExecutor-7-thread-1-processing-x:yojana) [   x:yojana] o.a.s.c.SolrCore [yojana] Registered new searcher Searcher@71e59cbe[yojana] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+4990 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.u.UpdateLog Took 5 ms to seed version buckets with highest version 1514979387028537344
+4990 INFO  (coreLoadExecutor-6-thread-1) [   x:yojana] o.a.s.c.CoreContainer registering core: yojana
+16513 INFO  (qtp668849042-13) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=131 
+16624 INFO  (qtp668849042-16) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=9 
+16633 INFO  (qtp668849042-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={core=yojana&action=STATUS&wt=json} status=0 QTime=3 
+35188 INFO  (qtp668849042-18) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=0 status=0 QTime=172 
+35789 INFO  (qtp668849042-13) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=0 status=0 QTime=0 
+40757 INFO  (qtp668849042-17) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1444796967060} status=0 QTime=0 
+40866 INFO  (qtp668849042-20) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1444796967091} status=0 QTime=79 
+44483 ERROR (qtp668849042-37) [   x:yojana] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-bottom.html [/Users/deshetti/Projects/solr/server/solr/yojana/conf/admin-extra.menu-bottom.html]
+44483 ERROR (qtp668849042-13) [   x:yojana] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.menu-top.html [/Users/deshetti/Projects/solr/server/solr/yojana/conf/admin-extra.menu-top.html]
+44484 INFO  (qtp668849042-13) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/admin/file params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1444796970676} status=404 QTime=33 
+44485 INFO  (qtp668849042-37) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/admin/file params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1444796970677} status=404 QTime=33 
+44506 INFO  (qtp668849042-37) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1444796970804} status=0 QTime=0 
+44509 INFO  (qtp668849042-18) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/replication params={wt=json&command=details&_=1444796970810} status=0 QTime=1 
+44512 ERROR (qtp668849042-35) [   x:yojana] o.a.s.h.a.ShowFileRequestHandler Can not find: admin-extra.html [/Users/deshetti/Projects/solr/server/solr/yojana/conf/admin-extra.html]
+44513 INFO  (qtp668849042-35) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/admin/file params={file=admin-extra.html&_=1444796970814} status=404 QTime=0 
+44515 INFO  (qtp668849042-16) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1444796970816} status=503 QTime=1 
+44523 INFO  (qtp668849042-20) [   x:yojana] o.a.s.c.S.Request [yojana] webapp=/solr path=/admin/system params={wt=json&_=1444796970812} status=0 QTime=13 
