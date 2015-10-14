@@ -1,0 +1,34 @@
+2015-10-14 19:14:56.431 INFO  (main) [   ] o.e.j.u.log Logging initialized @589ms
+2015-10-14 19:14:56.609 INFO  (main) [   ] o.e.j.s.Server jetty-9.2.11.v20150529
+2015-10-14 19:14:56.624 WARN  (main) [   ] o.e.j.s.h.RequestLogHandler !RequestLog
+2015-10-14 19:14:56.626 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:/Users/deshetti/Projects/solr/server/contexts/] at interval 0
+2015-10-14 19:14:57.194 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2015-10-14 19:14:57.204 WARN  (main) [   ] o.e.j.s.SecurityHandler ServletContext@o.e.j.w.WebAppContext@754ba872{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,STARTING}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp} has uncovered http methods for path: /
+2015-10-14 19:14:57.234 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init(): WebAppClassLoader=1540011289@5bcab519
+2015-10-14 19:14:57.319 INFO  (main) [   ] o.a.s.c.SolrResourceLoader JNDI not configured for solr (NoInitialContextEx)
+2015-10-14 19:14:57.320 INFO  (main) [   ] o.a.s.c.SolrResourceLoader using system property solr.solr.home: /Users/deshetti/projects/solr/server/solr
+2015-10-14 19:14:57.322 INFO  (main) [   ] o.a.s.c.SolrResourceLoader new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/server/solr/'
+2015-10-14 19:14:57.565 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/deshetti/projects/solr/server/solr/solr.xml
+2015-10-14 19:14:57.778 INFO  (main) [   ] o.a.s.c.CoresLocator Config-defined core root directory: /Users/deshetti/projects/solr/server/solr
+2015-10-14 19:14:57.899 INFO  (main) [   ] o.a.s.c.CoreContainer New CoreContainer 1165303897
+2015-10-14 19:14:57.900 INFO  (main) [   ] o.a.s.c.CoreContainer Loading cores into CoreContainer [instanceDir=/Users/deshetti/projects/solr/server/solr/]
+2015-10-14 19:14:57.900 INFO  (main) [   ] o.a.s.c.CoreContainer loading shared library: /Users/deshetti/projects/solr/server/solr/lib
+2015-10-14 19:14:57.900 WARN  (main) [   ] o.a.s.c.SolrResourceLoader Can't find (or read) directory to add to classloader: lib (resolved as: /Users/deshetti/projects/solr/server/solr/lib).
+2015-10-14 19:14:57.968 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+2015-10-14 19:14:58.216 INFO  (main) [   ] o.a.s.u.UpdateShardHandler Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+2015-10-14 19:14:58.223 INFO  (main) [   ] o.a.s.l.LogWatcher SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+2015-10-14 19:14:58.224 INFO  (main) [   ] o.a.s.l.LogWatcher Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+2015-10-14 19:14:58.236 INFO  (main) [   ] o.a.s.c.CoreContainer Security conf doesn't exist. Skipping setup for authorization module.
+2015-10-14 19:14:58.237 INFO  (main) [   ] o.a.s.c.CoreContainer No authentication plugin used.
+2015-10-14 19:14:58.415 INFO  (main) [   ] o.a.s.c.CoresLocator Looking for core definitions underneath /Users/deshetti/projects/solr/server/solr
+2015-10-14 19:14:58.442 INFO  (main) [   ] o.a.s.c.CoresLocator Found 0 core definitions
+2015-10-14 19:14:58.446 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter user.dir=/Users/deshetti/Projects/solr/server
+2015-10-14 19:14:58.446 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter SolrDispatchFilter.init() done
+2015-10-14 19:14:58.498 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@754ba872{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp}
+2015-10-14 19:14:58.512 INFO  (main) [   ] o.e.j.s.ServerConnector Started ServerConnector@52719fb6{HTTP/1.1}{0.0.0.0:8983}
+2015-10-14 19:14:58.513 INFO  (main) [   ] o.e.j.s.Server Started @2672ms
+2015-10-14 19:15:15.288 INFO  (qtp668849042-21) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1444850115168} status=0 QTime=114 
+2015-10-14 19:15:15.401 INFO  (qtp668849042-14) [   ] o.a.s.s.SolrDispatchFilter [admin] webapp=null path=/admin/info/system params={wt=json&_=1444850115347} status=0 QTime=50 
+2015-10-14 19:16:15.044 INFO  (ShutdownMonitor) [   ] o.e.j.s.ServerConnector Stopped ServerConnector@52719fb6{HTTP/1.1}{0.0.0.0:8983}
+2015-10-14 19:16:15.045 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1165303897
+2015-10-14 19:16:15.057 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@754ba872{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,UNAVAILABLE}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp}

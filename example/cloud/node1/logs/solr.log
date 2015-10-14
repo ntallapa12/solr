@@ -1,0 +1,1035 @@
+INFO  - 2015-10-14 20:05:27.015; [   ] org.eclipse.jetty.util.log.Log; Logging initialized @305ms
+INFO  - 2015-10-14 20:05:27.186; [   ] org.eclipse.jetty.server.Server; jetty-9.2.11.v20150529
+WARN  - 2015-10-14 20:05:27.204; [   ] org.eclipse.jetty.server.handler.RequestLogHandler; !RequestLog
+INFO  - 2015-10-14 20:05:27.207; [   ] org.eclipse.jetty.deploy.providers.ScanningAppProvider; Deployment monitor [file:/Users/deshetti/Projects/solr/server/contexts/] at interval 0
+INFO  - 2015-10-14 20:05:27.664; [   ] org.eclipse.jetty.webapp.StandardDescriptorProcessor; NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+WARN  - 2015-10-14 20:05:27.673; [   ] org.eclipse.jetty.security.ConstraintSecurityHandler; ServletContext@o.e.j.w.WebAppContext@675d3402{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,STARTING}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp} has uncovered http methods for path: /
+INFO  - 2015-10-14 20:05:27.679; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init(): WebAppClassLoader=684874119@28d25987
+INFO  - 2015-10-14 20:05:27.691; [   ] org.apache.solr.core.SolrResourceLoader; JNDI not configured for solr (NoInitialContextEx)
+INFO  - 2015-10-14 20:05:27.691; [   ] org.apache.solr.core.SolrResourceLoader; using system property solr.solr.home: /Users/deshetti/projects/solr/example/cloud/node1/solr
+INFO  - 2015-10-14 20:05:27.693; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/'
+INFO  - 2015-10-14 20:05:27.818; [   ] org.apache.solr.core.SolrXmlConfig; Loading container configuration from /Users/deshetti/projects/solr/example/cloud/node1/solr/solr.xml
+INFO  - 2015-10-14 20:05:27.902; [   ] org.apache.solr.core.CorePropertiesLocator; Config-defined core root directory: /Users/deshetti/projects/solr/example/cloud/node1/solr
+INFO  - 2015-10-14 20:05:27.922; [   ] org.apache.solr.core.CoreContainer; New CoreContainer 68377659
+INFO  - 2015-10-14 20:05:27.922; [   ] org.apache.solr.core.CoreContainer; Loading cores into CoreContainer [instanceDir=/Users/deshetti/projects/solr/example/cloud/node1/solr/]
+INFO  - 2015-10-14 20:05:27.922; [   ] org.apache.solr.core.CoreContainer; loading shared library: /Users/deshetti/projects/solr/example/cloud/node1/solr/lib
+WARN  - 2015-10-14 20:05:27.922; [   ] org.apache.solr.core.SolrResourceLoader; Can't find (or read) directory to add to classloader: lib (resolved as: /Users/deshetti/projects/solr/example/cloud/node1/solr/lib).
+INFO  - 2015-10-14 20:05:27.940; [   ] org.apache.solr.handler.component.HttpShardHandlerFactory; created with socketTimeout : 600000,connTimeout : 60000,maxConnectionsPerHost : 20,maxConnections : 10000,corePoolSize : 0,maximumPoolSize : 2147483647,maxThreadIdleTime : 5,sizeOfQueue : -1,fairnessPolicy : false,useRetries : false,
+INFO  - 2015-10-14 20:05:28.114; [   ] org.apache.solr.update.UpdateShardHandler; Creating UpdateShardHandler HTTP client with params: socketTimeout=600000&connTimeout=60000&retry=true
+INFO  - 2015-10-14 20:05:28.116; [   ] org.apache.solr.logging.LogWatcher; SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+INFO  - 2015-10-14 20:05:28.117; [   ] org.apache.solr.logging.LogWatcher; Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+INFO  - 2015-10-14 20:05:28.123; [   ] org.apache.solr.cloud.SolrZkServer; STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+INFO  - 2015-10-14 20:05:28.628; [   ] org.apache.solr.core.ZkContainer; Zookeeper client=localhost:9983
+INFO  - 2015-10-14 20:05:28.668; [   ] org.apache.solr.common.cloud.ConnectionManager; Waiting for client to connect to ZooKeeper
+INFO  - 2015-10-14 20:05:28.691; [   ] org.apache.solr.common.cloud.ConnectionManager; Watcher org.apache.solr.common.cloud.ConnectionManager@7d4f54e7 name:ZooKeeperConnection Watcher:localhost:9983 got event WatchedEvent state:SyncConnected type:None path:null path:null type:None
+INFO  - 2015-10-14 20:05:28.691; [   ] org.apache.solr.common.cloud.ConnectionManager; Client is connected to ZooKeeper
+INFO  - 2015-10-14 20:05:28.716; [   ] org.apache.solr.cloud.ZkController; Register node as live in ZooKeeper:/live_nodes/192.168.0.3:8983_solr
+INFO  - 2015-10-14 20:05:28.732; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /live_nodes/192.168.0.3:8983_solr
+INFO  - 2015-10-14 20:05:28.742; [   ] org.apache.solr.cloud.Overseer; Overseer (id=null) closing
+INFO  - 2015-10-14 20:05:28.744; [   ] org.apache.solr.cloud.LeaderElector; Joined leadership election with path: /overseer_elect/election/94689894613516288-192.168.0.3:8983_solr-n_0000000008
+INFO  - 2015-10-14 20:05:28.748; [   ] org.apache.solr.cloud.OverseerElectionContext; I am going to be the leader 192.168.0.3:8983_solr
+INFO  - 2015-10-14 20:05:28.751; [   ] org.apache.solr.common.cloud.SolrZkClient; makePath: /overseer_elect/leader
+INFO  - 2015-10-14 20:05:28.754; [   ] org.apache.solr.cloud.Overseer; Overseer (id=94689894613516288-192.168.0.3:8983_solr-n_0000000008) starting
+INFO  - 2015-10-14 20:05:28.778; [   ] org.apache.solr.cloud.OverseerAutoReplicaFailoverThread; Starting OverseerAutoReplicaFailoverThread autoReplicaFailoverWorkLoopDelay=10000 autoReplicaFailoverWaitAfterExpiration=30000 autoReplicaFailoverBadNodeExpiration=60000
+INFO  - 2015-10-14 20:05:28.794; [   ] org.apache.solr.cloud.OverseerCollectionProcessor; Process current queue of collection creations
+INFO  - 2015-10-14 20:05:28.794; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating cluster state from ZooKeeper... 
+INFO  - 2015-10-14 20:05:28.803; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; Starting to work on the main queue
+INFO  - 2015-10-14 20:05:28.811; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: workQueueSize: 1, message = {
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:28.815; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:28.824; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 68
+INFO  - 2015-10-14 20:05:28.836; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:28.837; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:28.839; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 69
+INFO  - 2015-10-14 20:05:28.845; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:28.846; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"yojana_shard1_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:28.847; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard1_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:28.849; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 70
+INFO  - 2015-10-14 20:05:28.863; [   ] org.apache.solr.core.CoreContainer; Security conf doesn't exist. Skipping setup for authorization module.
+INFO  - 2015-10-14 20:05:28.863; [   ] org.apache.solr.core.CoreContainer; No authentication plugin used.
+INFO  - 2015-10-14 20:05:28.884; [   ] org.apache.solr.core.CorePropertiesLocator; Looking for core definitions underneath /Users/deshetti/projects/solr/example/cloud/node1/solr
+INFO  - 2015-10-14 20:05:28.911; [   ] org.apache.solr.core.CoreDescriptor; Created CoreDescriptor: {name=yojana_shard1_replica2, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2, collection=yojana, absoluteInstDir=/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/, coreNodeName=core_node1, numShards=2, dataDir=data/, shard=shard1}
+INFO  - 2015-10-14 20:05:28.911; [   ] org.apache.solr.core.CorePropertiesLocator; Found core yojana_shard1_replica2 in /Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/
+INFO  - 2015-10-14 20:05:28.923; [   ] org.apache.solr.core.CoreDescriptor; Created CoreDescriptor: {name=yojana_shard2_replica2, config=solrconfig.xml, transient=false, schema=schema.xml, loadOnStartup=true, configSetProperties=configsetprops.json, instanceDir=/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2, collection=yojana, absoluteInstDir=/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/, coreNodeName=core_node2, numShards=2, dataDir=data/, shard=shard2}
+INFO  - 2015-10-14 20:05:28.923; [   ] org.apache.solr.core.CorePropertiesLocator; Found core yojana_shard2_replica2 in /Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/
+INFO  - 2015-10-14 20:05:28.924; [   ] org.apache.solr.core.CorePropertiesLocator; Found 2 core definitions
+INFO  - 2015-10-14 20:05:28.926; [   ] org.apache.solr.servlet.SolrDispatchFilter; user.dir=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:28.926; [   ] org.apache.solr.servlet.SolrDispatchFilter; SolrDispatchFilter.init() done
+INFO  - 2015-10-14 20:05:28.928; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; publishing state=down
+INFO  - 2015-10-14 20:05:28.928; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; publishing state=down
+INFO  - 2015-10-14 20:05:28.929; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:28.930; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; Registering watch for external collection yojana
+INFO  - 2015-10-14 20:05:28.931; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; addZkWatch yojana
+INFO  - 2015-10-14 20:05:28.931; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Registering watch for external collection yojana
+INFO  - 2015-10-14 20:05:28.931; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"yojana_shard1_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:28.931; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Updating collection state at /collections/yojana/state.json from ZooKeeper... 
+INFO  - 2015-10-14 20:05:28.932; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard1_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:28.958; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 71 
+INFO  - 2015-10-14 20:05:28.958; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 71
+INFO  - 2015-10-14 20:05:28.959; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:28.959; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; waiting to find shard id in clusterstate for yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:28.959; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Check for collection zkNode:yojana
+INFO  - 2015-10-14 20:05:28.959; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; Check for collection zkNode:yojana
+INFO  - 2015-10-14 20:05:28.960; [   ] org.eclipse.jetty.server.handler.ContextHandler; Started o.e.j.w.WebAppContext@675d3402{/solr,file:/Users/deshetti/Projects/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/deshetti/Projects/solr/server/solr-webapp/webapp}
+INFO  - 2015-10-14 20:05:28.960; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 1)
+INFO  - 2015-10-14 20:05:28.960; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-10-14 20:05:28.960; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-10-14 20:05:28.961; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:28.961; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:28.961; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 72 
+INFO  - 2015-10-14 20:05:28.962; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:28.962; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:28.963; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/'
+INFO  - 2015-10-14 20:05:28.963; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/'
+INFO  - 2015-10-14 20:05:28.965; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:28.966; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:28.966; [   ] org.eclipse.jetty.server.AbstractConnector; Started ServerConnector@1f9e9475{HTTP/1.1}{0.0.0.0:8983}
+INFO  - 2015-10-14 20:05:28.966; [   ] org.eclipse.jetty.server.Server; Started @2258ms
+INFO  - 2015-10-14 20:05:28.967; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 72
+INFO  - 2015-10-14 20:05:28.968; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 1)
+INFO  - 2015-10-14 20:05:28.969; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 73 
+INFO  - 2015-10-14 20:05:28.973; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:28.974; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.Config; loaded config solrconfig.xml with version 0 
+INFO  - 2015-10-14 20:05:28.977; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.Config; loaded config solrconfig.xml with version 0 
+INFO  - 2015-10-14 20:05:28.994; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; config overlay loaded . version : 3 
+INFO  - 2015-10-14 20:05:28.994; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; config overlay loaded . version : 3 
+INFO  - 2015-10-14 20:05:28.998; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:28.998; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:29.019; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-10-14 20:05:29.021; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-10-14 20:05:29.024; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.3.1
+INFO  - 2015-10-14 20:05:29.024; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.3.1
+INFO  - 2015-10-14 20:05:29.092; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-10-14 20:05:29.092; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-10-14 20:05:29.101; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/yojana/schema.xml
+INFO  - 2015-10-14 20:05:29.101; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/yojana/schema.xml
+INFO  - 2015-10-14 20:05:29.130; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; [yojana_shard2_replica2] Schema name=example
+INFO  - 2015-10-14 20:05:29.162; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.IndexSchema; [yojana_shard1_replica2] Schema name=example
+INFO  - 2015-10-14 20:05:29.349; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-10-14 20:05:29.350; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-10-14 20:05:29.447; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:29.447; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:29.454; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:29.454; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:29.462; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.ConfigSetProperties; Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/yojana', cwd=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:29.462; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.ConfigSetProperties; Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/yojana', cwd=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:29.463; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; Creating SolrCore 'yojana_shard2_replica2' using configuration from collection yojana
+INFO  - 2015-10-14 20:05:29.463; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.CoreContainer; Creating SolrCore 'yojana_shard1_replica2' using configuration from collection yojana
+INFO  - 2015-10-14 20:05:29.463; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-10-14 20:05:29.463; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; solr.NRTCachingDirectoryFactory
+INFO  - 2015-10-14 20:05:29.476; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [[yojana_shard2_replica2] ] Opening new SolrCore at [/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/], dataDir=[null]
+INFO  - 2015-10-14 20:05:29.476; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [[yojana_shard1_replica2] ] Opening new SolrCore at [/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/], dataDir=[null]
+INFO  - 2015-10-14 20:05:29.478; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@16dae924
+INFO  - 2015-10-14 20:05:29.478; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@16dae924
+INFO  - 2015-10-14 20:05:29.499; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data
+INFO  - 2015-10-14 20:05:29.499; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data
+INFO  - 2015-10-14 20:05:29.500; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index/
+INFO  - 2015-10-14 20:05:29.500; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index/
+INFO  - 2015-10-14 20:05:29.501; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index
+INFO  - 2015-10-14 20:05:29.501; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.CachingDirectoryFactory; return new directory for /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index
+INFO  - 2015-10-14 20:05:29.515; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore$12; Looking for old index directories to cleanup for core yojana_shard1_replica2 in /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/
+INFO  - 2015-10-14 20:05:29.515; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$12; Looking for old index directories to cleanup for core yojana_shard2_replica2 in /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/
+INFO  - 2015-10-14 20:05:29.579; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-10-14 20:05:29.580; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-10-14 20:05:29.605; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.605; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.608; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.608; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.609; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.609; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.610; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.610; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:29.627; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-10-14 20:05:29.627; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-10-14 20:05:29.627; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-10-14 20:05:29.628; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-10-14 20:05:29.630; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-10-14 20:05:29.630; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-10-14 20:05:29.630; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.RequestHandlers; Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+INFO  - 2015-10-14 20:05:29.630; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.RequestHandlers; Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+INFO  - 2015-10-14 20:05:29.631; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-10-14 20:05:29.631; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-10-14 20:05:29.642; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2015-10-14 20:05:29.642; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateHandler; Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+INFO  - 2015-10-14 20:05:29.642; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2015-10-14 20:05:29.642; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+INFO  - 2015-10-14 20:05:29.650; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-10-14 20:05:29.650; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2015-10-14 20:05:29.664; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-10-14 20:05:29.664; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2015-10-14 20:05:29.682; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1f05a649; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-10-14 20:05:29.682; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1f05a649; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+INFO  - 2015-10-14 20:05:29.682; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-10-14 20:05:29.682; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 2
+INFO  - 2015-10-14 20:05:29.691; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@4226cb4e[yojana_shard2_replica2] main
+INFO  - 2015-10-14 20:05:29.696; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:29.697; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:29.698; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:29.700; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:29.700; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-10-14 20:05:29.709; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:29.711; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/yojana/_rest_managed.json
+INFO  - 2015-10-14 20:05:29.711; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:29.711; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-10-14 20:05:29.711; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-10-14 20:05:29.718; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-10-14 20:05:29.720; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Registered new searcher Searcher@4226cb4e[yojana_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-10-14 20:05:29.720; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Looking up max value of version field to seed version buckets
+INFO  - 2015-10-14 20:05:29.721; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; Refreshing highest value of _version_ for 65536 version buckets from index
+INFO  - 2015-10-14 20:05:29.721; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; No terms found for _version_, cannot seed version bucket highest value from index
+INFO  - 2015-10-14 20:05:29.721; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Could not find max version in index or recent updates, using new clock 1515038315350327296
+INFO  - 2015-10-14 20:05:29.721; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5a28431a[yojana_shard1_replica2] main
+INFO  - 2015-10-14 20:05:29.722; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:29.723; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:29.723; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:29.723; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:29.723; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-10-14 20:05:29.724; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:29.725; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/yojana/_rest_managed.json
+INFO  - 2015-10-14 20:05:29.725; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:29.725; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Took 4 ms to seed version buckets with highest version 1515038315350327296
+INFO  - 2015-10-14 20:05:29.725; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-10-14 20:05:29.725; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-10-14 20:05:29.725; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-10-14 20:05:29.726; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; watch zkdir /configs/yojana
+INFO  - 2015-10-14 20:05:29.727; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Registered new searcher Searcher@5a28431a[yojana_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C1) Uninverting(_1(5.3.1):C1)))}
+INFO  - 2015-10-14 20:05:29.727; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; registering core: yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:29.727; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.UpdateLog; Looking up max value of version field to seed version buckets
+INFO  - 2015-10-14 20:05:29.727; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.VersionInfo; Refreshing highest value of _version_ for 65536 version buckets from index
+INFO  - 2015-10-14 20:05:29.727; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Register replica - core:yojana_shard2_replica2 address:http://192.168.0.3:8983/solr collection:yojana shard:shard2
+INFO  - 2015-10-14 20:05:29.733; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.LeaderElector; Joined leadership election with path: /collections/yojana/leader_elect/shard2/election/94689894613516288-core_node2-n_0000000008
+INFO  - 2015-10-14 20:05:29.734; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard2
+INFO  - 2015-10-14 20:05:29.736; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:29.737; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoutin=179999ms
+INFO  - 2015-10-14 20:05:29.737; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard2",
+  "collection":"yojana"} current state version: 1
+INFO  - 2015-10-14 20:05:29.739; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.VersionInfo; Found MAX value 1515034738319949824 from Terms for _version_ in index
+INFO  - 2015-10-14 20:05:29.741; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 73
+INFO  - 2015-10-14 20:05:29.741; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.UpdateLog; Took 14 ms to seed version buckets with highest version 1515034738319949824
+INFO  - 2015-10-14 20:05:29.741; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.CoreContainer; registering core: yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:29.742; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; Register replica - core:yojana_shard1_replica2 address:http://192.168.0.3:8983/solr collection:yojana shard:shard1
+INFO  - 2015-10-14 20:05:29.742; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 1)
+INFO  - 2015-10-14 20:05:29.743; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 74 
+INFO  - 2015-10-14 20:05:29.744; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.LeaderElector; Joined leadership election with path: /collections/yojana/leader_elect/shard1/election/94689894613516288-core_node1-n_0000000008
+INFO  - 2015-10-14 20:05:29.745; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; Running the leader process for shard shard1
+INFO  - 2015-10-14 20:05:29.747; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:29.748; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoutin=179999ms
+INFO  - 2015-10-14 20:05:29.748; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"yojana"} current state version: 1
+INFO  - 2015-10-14 20:05:29.750; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 74
+INFO  - 2015-10-14 20:05:29.751; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 1)
+INFO  - 2015-10-14 20:05:29.752; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 75 
+INFO  - 2015-10-14 20:05:32.612; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=66 
+INFO  - 2015-10-14 20:05:32.653; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :clusterstatus with params action=CLUSTERSTATUS&wt=json 
+INFO  - 2015-10-14 20:05:32.656; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 75 
+INFO  - 2015-10-14 20:05:32.657; [   ] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:32.658; [   ] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:32.659; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=11 
+INFO  - 2015-10-14 20:05:35.802; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:35.803; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 2, message = {
+  "core":"yojana_shard1_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:35.804; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard1_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:35.806; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 75
+INFO  - 2015-10-14 20:05:35.807; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:35.808; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 76 
+INFO  - 2015-10-14 20:05:35.812; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard2_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:35.813; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"down",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:35.815; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 76
+INFO  - 2015-10-14 20:05:35.816; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:35.819; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 77 
+INFO  - 2015-10-14 20:05:35.823; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:36.798; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2015-10-14 20:05:36.798; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2015-10-14 20:05:36.798; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.0.3:8983/solr/yojana_shard2_replica2/
+INFO  - 2015-10-14 20:05:36.801; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.PeerSync; PeerSync: core=yojana_shard2_replica2 url=http://192.168.0.3:8983/solr START replicas=[http://192.168.0.3:7574/solr/yojana_shard2_replica1/] nUpdates=100
+INFO  - 2015-10-14 20:05:36.803; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.PeerSync; PeerSync: core=yojana_shard2_replica2 url=http://192.168.0.3:8983/solr DONE.  We have no versions.  sync failed.
+INFO  - 2015-10-14 20:05:36.803; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.SyncStrategy; Leader's attempt to sync with shard failed, moving to the next candidate
+INFO  - 2015-10-14 20:05:36.803; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+INFO  - 2015-10-14 20:05:36.803; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.0.3:8983/solr/yojana_shard2_replica2/ shard2
+INFO  - 2015-10-14 20:05:36.805; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/yojana/leaders/shard2
+INFO  - 2015-10-14 20:05:36.857; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; Enough replicas found to continue.
+INFO  - 2015-10-14 20:05:36.857; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; I may be the new leader - try and sync
+INFO  - 2015-10-14 20:05:36.857; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.SyncStrategy; Sync replicas to http://192.168.0.3:8983/solr/yojana_shard1_replica2/
+INFO  - 2015-10-14 20:05:36.858; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:36.858; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.PeerSync; PeerSync: core=yojana_shard1_replica2 url=http://192.168.0.3:8983/solr START replicas=[http://192.168.0.3:7574/solr/yojana_shard1_replica1/] nUpdates=100
+INFO  - 2015-10-14 20:05:36.862; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard2",
+  "collection":"yojana",
+  "base_url":"http://192.168.0.3:8983/solr",
+  "core":"yojana_shard2_replica2",
+  "state":"active"} current state version: 1
+INFO  - 2015-10-14 20:05:36.865; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 77
+INFO  - 2015-10-14 20:05:36.866; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:36.867; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 78 
+INFO  - 2015-10-14 20:05:36.914; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; We are http://192.168.0.3:8983/solr/yojana_shard2_replica2/ and leader is http://192.168.0.3:8983/solr/yojana_shard2_replica2/
+INFO  - 2015-10-14 20:05:36.915; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; No LogReplay needed for core=yojana_shard2_replica2 baseURL=http://192.168.0.3:8983/solr
+INFO  - 2015-10-14 20:05:36.916; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2015-10-14 20:05:36.916; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; publishing state=active
+INFO  - 2015-10-14 20:05:36.918; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:36.920; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:36.920; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica2",
+  "core_node_name":"core_node2",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:36.921; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 78 
+INFO  - 2015-10-14 20:05:36.922; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 78
+INFO  - 2015-10-14 20:05:36.923; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:36.924; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 79 
+INFO  - 2015-10-14 20:05:36.984; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.PeerSync; PeerSync: core=yojana_shard1_replica2 url=http://192.168.0.3:8983/solr  Received 2 versions from http://192.168.0.3:7574/solr/yojana_shard1_replica1/
+INFO  - 2015-10-14 20:05:36.984; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.PeerSync; PeerSync: core=yojana_shard1_replica2 url=http://192.168.0.3:8983/solr  Our versions are newer. ourLowThreshold=1515034727143178240 otherHigh=1515034738319949824
+INFO  - 2015-10-14 20:05:36.984; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.PeerSync; PeerSync: core=yojana_shard1_replica2 url=http://192.168.0.3:8983/solr DONE. sync succeeded
+INFO  - 2015-10-14 20:05:36.985; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.SyncStrategy; Sync Success - now sync replicas to me
+INFO  - 2015-10-14 20:05:36.985; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.SyncStrategy; http://192.168.0.3:8983/solr/yojana_shard1_replica2/: try and ask http://192.168.0.3:7574/solr/yojana_shard1_replica1/ to sync
+INFO  - 2015-10-14 20:05:37.057; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/get params={distrib=false&qt=/get&getVersions=100&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:05:37.070; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.SyncStrategy; http://192.168.0.3:8983/solr/yojana_shard1_replica2/:  sync completed with http://192.168.0.3:7574/solr/yojana_shard1_replica1/
+INFO  - 2015-10-14 20:05:37.070; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ShardLeaderElectionContext; I am the new leader: http://192.168.0.3:8983/solr/yojana_shard1_replica2/ shard1
+INFO  - 2015-10-14 20:05:37.070; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.SolrZkClient; makePath: /collections/yojana/leaders/shard1
+INFO  - 2015-10-14 20:05:37.074; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:37.075; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "operation":"leader",
+  "shard":"shard1",
+  "collection":"yojana",
+  "base_url":"http://192.168.0.3:8983/solr",
+  "core":"yojana_shard1_replica2",
+  "state":"active"} current state version: 1
+INFO  - 2015-10-14 20:05:37.076; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 79
+INFO  - 2015-10-14 20:05:37.077; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:37.078; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 80 
+INFO  - 2015-10-14 20:05:37.128; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; We are http://192.168.0.3:8983/solr/yojana_shard1_replica2/ and leader is http://192.168.0.3:8983/solr/yojana_shard1_replica2/
+INFO  - 2015-10-14 20:05:37.128; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; No LogReplay needed for core=yojana_shard1_replica2 baseURL=http://192.168.0.3:8983/solr
+INFO  - 2015-10-14 20:05:37.128; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; I am the leader, no recovery necessary
+INFO  - 2015-10-14 20:05:37.129; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; publishing state=active
+INFO  - 2015-10-14 20:05:37.130; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:37.131; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard1_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:37.131; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard1_replica2",
+  "core_node_name":"core_node1",
+  "roles":null,
+  "base_url":"http://192.168.0.3:8983/solr",
+  "node_name":"192.168.0.3:8983_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:37.131; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 80 
+INFO  - 2015-10-14 20:05:37.132; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 80
+INFO  - 2015-10-14 20:05:37.133; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:37.134; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 81 
+INFO  - 2015-10-14 20:05:37.649; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:37.650; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard2_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:37.651; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:37.652; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 81
+INFO  - 2015-10-14 20:05:37.653; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:37.654; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 82 
+INFO  - 2015-10-14 20:05:37.659; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:37.660; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard1_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:37.660; [   ] org.apache.solr.handler.admin.CoreAdminHandler; Going to wait for coreNodeName: core_node4, state: recovering, checkLive: true, onlyIfLeader: true, onlyIfLeaderActive: true
+INFO  - 2015-10-14 20:05:37.661; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard1_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"recovering",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:37.663; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 82
+INFO  - 2015-10-14 20:05:37.663; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 82 
+INFO  - 2015-10-14 20:05:37.663; [   ] org.apache.solr.handler.admin.CoreAdminHandler; Will wait a max of 183 seconds to see yojana_shard2_replica2 (shard2 of yojana) have state: recovering
+INFO  - 2015-10-14 20:05:37.663; [   ] org.apache.solr.handler.admin.CoreAdminHandler; Going to wait for coreNodeName: core_node3, state: recovering, checkLive: true, onlyIfLeader: true, onlyIfLeaderActive: true
+INFO  - 2015-10-14 20:05:37.664; [   ] org.apache.solr.handler.admin.CoreAdminHandler; In WaitForState(recovering): collection=yojana, shard=shard2, thisCore=yojana_shard2_replica2, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=192.168.0.3:7574_solr, coreNodeName=core_node4, onlyIfActiveCheckResult=false, nodeProps: core_node4:{"core":"yojana_shard2_replica1","base_url":"http://192.168.0.3:7574/solr","node_name":"192.168.0.3:7574_solr","state":"recovering"}
+INFO  - 2015-10-14 20:05:37.664; [   ] org.apache.solr.handler.admin.CoreAdminHandler; Waited coreNodeName: core_node4, state: recovering, checkLive: true, onlyIfLeader: true for: 0 seconds.
+INFO  - 2015-10-14 20:05:37.664; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:37.664; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={nodeName=192.168.0.3:7574_solr&onlyIfLeaderActive=true&core=yojana_shard2_replica2&coreNodeName=core_node4&action=PREPRECOVERY&checkLive=true&state=recovering&onlyIfLeader=true&wt=javabin&version=2} status=0 QTime=6 
+INFO  - 2015-10-14 20:05:37.666; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 83 
+INFO  - 2015-10-14 20:05:37.667; [   ] org.apache.solr.handler.admin.CoreAdminHandler; Will wait a max of 183 seconds to see yojana_shard1_replica2 (shard1 of yojana) have state: recovering
+INFO  - 2015-10-14 20:05:37.667; [   ] org.apache.solr.handler.admin.CoreAdminHandler; In WaitForState(recovering): collection=yojana, shard=shard1, thisCore=yojana_shard1_replica2, leaderDoesNotNeedRecovery=false, isLeader? true, live=true, checkLive=true, currentState=recovering, localState=active, nodeName=192.168.0.3:7574_solr, coreNodeName=core_node3, onlyIfActiveCheckResult=false, nodeProps: core_node3:{"core":"yojana_shard1_replica1","base_url":"http://192.168.0.3:7574/solr","node_name":"192.168.0.3:7574_solr","state":"recovering"}
+INFO  - 2015-10-14 20:05:37.667; [   ] org.apache.solr.handler.admin.CoreAdminHandler; Waited coreNodeName: core_node3, state: recovering, checkLive: true, onlyIfLeader: true for: 0 seconds.
+INFO  - 2015-10-14 20:05:37.668; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 83 
+INFO  - 2015-10-14 20:05:37.668; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/cores params={nodeName=192.168.0.3:7574_solr&onlyIfLeaderActive=true&core=yojana_shard1_replica2&coreNodeName=core_node3&action=PREPRECOVERY&checkLive=true&state=recovering&onlyIfLeader=true&wt=javabin&version=2} status=0 QTime=4 
+INFO  - 2015-10-14 20:05:44.717; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/get params={distrib=false&qt=/get&getVersions=100&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:05:44.728; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+INFO  - 2015-10-14 20:05:44.717; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/get params={distrib=false&qt=/get&getVersions=100&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:05:44.730; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; No uncommitted changes. Skipping IW.commit.
+INFO  - 2015-10-14 20:05:44.731; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; end_commit_flush
+INFO  - 2015-10-14 20:05:44.732; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.processor.LogUpdateProcessor; [yojana_shard2_replica2] webapp=/solr path=/update params={waitSearcher=true&openSearcher=false&commit=true&softCommit=false&commit_end_point=true&wt=javabin&version=2} {commit=} 0 12
+INFO  - 2015-10-14 20:05:44.741; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/replication params={qt=/replication&wt=javabin&version=2&command=indexversion} status=0 QTime=0 
+INFO  - 2015-10-14 20:05:44.750; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:44.751; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard1_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:44.752; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard1_replica1",
+  "core_node_name":"core_node3",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard1",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:44.753; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 83
+INFO  - 2015-10-14 20:05:44.754; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:44.754; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 84 
+INFO  - 2015-10-14 20:05:44.757; [   ] org.apache.solr.cloud.Overseer$ClusterStateUpdater; processMessage: queueSize: 1, message = {
+  "core":"yojana_shard2_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"} current state version: 1
+INFO  - 2015-10-14 20:05:44.757; [   ] org.apache.solr.cloud.overseer.ReplicaMutator; Update state numShards=2 message={
+  "core":"yojana_shard2_replica1",
+  "core_node_name":"core_node4",
+  "roles":null,
+  "base_url":"http://192.168.0.3:7574/solr",
+  "node_name":"192.168.0.3:7574_solr",
+  "numShards":"2",
+  "state":"active",
+  "shard":"shard2",
+  "collection":"yojana",
+  "operation":"state"}
+INFO  - 2015-10-14 20:05:44.759; [   ] org.apache.solr.cloud.overseer.ZkStateWriter; going to update_collection /collections/yojana/state.json version: 84
+INFO  - 2015-10-14 20:05:44.760; [   ] org.apache.solr.common.cloud.ZkStateReader$8; A cluster state change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/yojana/state.json for collection yojana has occurred - updating... (live nodes size: 2)
+INFO  - 2015-10-14 20:05:44.760; [   ] org.apache.solr.common.cloud.ZkStateReader; Updating data for yojana to ver 85 
+INFO  - 2015-10-14 20:05:44.762; [   ] org.apache.solr.cloud.DistributedQueue$LatchWatcher; NodeChildrenChanged fired on path /overseer/queue state SyncConnected
+INFO  - 2015-10-14 20:05:48.148; [   ] org.apache.solr.handler.admin.CollectionsHandler; Invoked Collection Action :list with params action=list&wt=json 
+INFO  - 2015-10-14 20:05:48.149; [   ] org.apache.solr.servlet.HttpSolrCall; [admin] webapp=null path=/admin/collections params={action=list&wt=json} status=0 QTime=0 
+INFO  - 2015-10-14 20:05:56.133; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; config overlay loaded . version : 3 
+INFO  - 2015-10-14 20:05:56.178; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Persisted config data to node /configs/yojana/configoverlay.json 
+INFO  - 2015-10-14 20:05:56.180; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command; Executed config commands successfully and persisted to ZK [{"set-property":{"updateHandler.autoSoftCommit.maxTime":"3000"}}]
+INFO  - 2015-10-14 20:05:56.181; [   ] org.apache.solr.core.SolrCore$11; config update listener called for core yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.181; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.181; [   ] org.apache.solr.core.SolrCore; /configs/yojana/configoverlay.json is stale will need an update from 3 to 4
+INFO  - 2015-10-14 20:05:56.181; [   ] org.apache.solr.core.SolrCore$11; core reload yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.182; [   ] org.apache.solr.cloud.ZkController; Check for collection zkNode:yojana
+INFO  - 2015-10-14 20:05:56.182; [   ] org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-10-14 20:05:56.182; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler; Waiting up to 30 secs for 4 replicas to set the property overlay to be of version 4 for collection yojana
+INFO  - 2015-10-14 20:05:56.183; [   ] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.184; [   ] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.184; [   ] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/'
+INFO  - 2015-10-14 20:05:56.185; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.186; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.185; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.185; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.193; [   ] org.apache.solr.core.Config; loaded config solrconfig.xml with version 0 
+INFO  - 2015-10-14 20:05:56.204; [   ] org.apache.solr.core.SolrConfig; config overlay loaded . version : 4 
+INFO  - 2015-10-14 20:05:56.205; [   ] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.210; [   ] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-10-14 20:05:56.211; [   ] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.3.1
+INFO  - 2015-10-14 20:05:56.223; [   ] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-10-14 20:05:56.224; [   ] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/yojana/schema.xml
+INFO  - 2015-10-14 20:05:56.244; [   ] org.apache.solr.schema.IndexSchema; [yojana_shard2_replica2] Schema name=example
+INFO  - 2015-10-14 20:05:56.295; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command; expecting overlay version 4 but my version is 3
+INFO  - 2015-10-14 20:05:56.295; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command; expecting overlay version 4 but my version is 3
+INFO  - 2015-10-14 20:05:56.297; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:05:56.297; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command$1; Trying to update my configs
+INFO  - 2015-10-14 20:05:56.297; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command$1; Trying to update my configs
+INFO  - 2015-10-14 20:05:56.297; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:05:56.297; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$11; config update listener called for core yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.297; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore$11; config update listener called for core yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:8983/solr/yojana_shard1_replica2/ for prop overlay   after 1 attempts
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard1_replica1/ for prop overlay   after 1 attempts
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:8983/solr/yojana_shard2_replica2/ for prop overlay   after 1 attempts
+INFO  - 2015-10-14 20:05:56.320; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; /configs/yojana/configoverlay.json is stale will need an update from 3 to 4
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; /configs/yojana/configoverlay.json is stale will need an update from 3 to 4
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard2_replica1/ for prop overlay   after 1 attempts
+INFO  - 2015-10-14 20:05:56.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.320; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.320; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore$11; core reload yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.320; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$11; core reload yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.320; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.320; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; Check for collection zkNode:yojana
+INFO  - 2015-10-14 20:05:56.321; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-10-14 20:05:56.321; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.322; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.322; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/'
+INFO  - 2015-10-14 20:05:56.332; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.Config; loaded config solrconfig.xml with version 0 
+INFO  - 2015-10-14 20:05:56.338; [   ] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-10-14 20:05:56.342; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; config overlay loaded . version : 4 
+INFO  - 2015-10-14 20:05:56.343; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.349; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-10-14 20:05:56.350; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.3.1
+INFO  - 2015-10-14 20:05:56.366; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-10-14 20:05:56.367; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/yojana/schema.xml
+INFO  - 2015-10-14 20:05:56.377; [   ] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.381; [   ] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.383; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.IndexSchema; [yojana_shard1_replica2] Schema name=example
+INFO  - 2015-10-14 20:05:56.386; [   ] org.apache.solr.core.ConfigSetProperties; Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/yojana', cwd=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:56.386; [   ] org.apache.solr.core.CoreContainer; Reloading SolrCore 'yojana_shard2_replica2' using configuration from collection yojana
+INFO  - 2015-10-14 20:05:56.387; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [[yojana_shard2_replica2] ] Opening new SolrCore at [/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/], dataDir=[/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/]
+INFO  - 2015-10-14 20:05:56.387; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@16dae924
+INFO  - 2015-10-14 20:05:56.387; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index/
+INFO  - 2015-10-14 20:05:56.388; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$12; Looking for old index directories to cleanup for core yojana_shard2_replica2 in /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/
+INFO  - 2015-10-14 20:05:56.398; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-10-14 20:05:56.400; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.401; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.403; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.407; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.416; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.417; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.417; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.418; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.RequestHandlers; Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+INFO  - 2015-10-14 20:05:56.419; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-10-14 20:05:56.421; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-10-14 20:05:56.421; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2015-10-14 20:05:56.422; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@6e70b8bb[yojana_shard2_replica2] main
+INFO  - 2015-10-14 20:05:56.423; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.426; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.426; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.427; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.427; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-10-14 20:05:56.427; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.430; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command; expecting overlay version 4 but my version is 3
+INFO  - 2015-10-14 20:05:56.430; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/yojana/_rest_managed.json
+INFO  - 2015-10-14 20:05:56.430; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command; expecting overlay version 4 but my version is 3
+INFO  - 2015-10-14 20:05:56.431; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard1_replica1/ for prop overlay   after 2 attempts
+INFO  - 2015-10-14 20:05:56.431; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:05:56.430; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:05:56.431; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command$1; Another reload is in progress . Not doing anything
+INFO  - 2015-10-14 20:05:56.431; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.431; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.431; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command$1; Another reload is in progress . Not doing anything
+INFO  - 2015-10-14 20:05:56.432; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-10-14 20:05:56.433; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard2_replica1/ for prop overlay   after 2 attempts
+INFO  - 2015-10-14 20:05:56.433; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:8983/solr/yojana_shard2_replica2/ for prop overlay   after 2 attempts
+INFO  - 2015-10-14 20:05:56.433; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:8983/solr/yojana_shard1_replica2/ for prop overlay   after 2 attempts
+INFO  - 2015-10-14 20:05:56.434; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.434; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.434; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-10-14 20:05:56.434; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.434; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-10-14 20:05:56.437; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Registered new searcher Searcher@6e70b8bb[yojana_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-10-14 20:05:56.437; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Looking up max value of version field to seed version buckets
+INFO  - 2015-10-14 20:05:56.437; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; Refreshing highest value of _version_ for 65536 version buckets from index
+INFO  - 2015-10-14 20:05:56.438; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; No terms found for _version_, cannot seed version bucket highest value from index
+INFO  - 2015-10-14 20:05:56.438; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Could not find max version in index or recent updates, using new clock 1515038343365132288
+INFO  - 2015-10-14 20:05:56.440; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Took 3 ms to seed version buckets with highest version 1515038343365132288
+INFO  - 2015-10-14 20:05:56.441; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Creating new IndexWriter...
+INFO  - 2015-10-14 20:05:56.441; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Waiting until IndexWriter is unused... core=yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.441; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Closing old IndexWriter... core=yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.453; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1f05a649; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-10-14 20:05:56.453; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-10-14 20:05:56.454; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; New IndexWriter is ready to be used.
+INFO  - 2015-10-14 20:05:56.454; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@228cdbf[yojana_shard2_replica2] main
+INFO  - 2015-10-14 20:05:56.456; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; replacing core: yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.456; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$11; config update listener called for core yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.456; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Check for collection zkNode:yojana
+INFO  - 2015-10-14 20:05:56.473; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-10-14 20:05:56.474; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.473; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.474; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; /configs/yojana/configoverlay.json is stale will need an update from 3 to 4
+INFO  - 2015-10-14 20:05:56.474; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.474; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$11; core reload yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.475; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/'
+INFO  - 2015-10-14 20:05:56.475; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Registered new searcher Searcher@228cdbf[yojana_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-10-14 20:05:56.484; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.Config; loaded config solrconfig.xml with version 0 
+INFO  - 2015-10-14 20:05:56.488; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-10-14 20:05:56.491; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; config overlay loaded . version : 4 
+INFO  - 2015-10-14 20:05:56.492; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.498; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-10-14 20:05:56.499; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.3.1
+INFO  - 2015-10-14 20:05:56.513; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-10-14 20:05:56.514; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/yojana/schema.xml
+INFO  - 2015-10-14 20:05:56.520; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.524; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.527; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; [yojana_shard2_replica2] Schema name=example
+INFO  - 2015-10-14 20:05:56.528; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.ConfigSetProperties; Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/yojana', cwd=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:56.528; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.CoreContainer; Reloading SolrCore 'yojana_shard1_replica2' using configuration from collection yojana
+INFO  - 2015-10-14 20:05:56.529; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [[yojana_shard1_replica2] ] Opening new SolrCore at [/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/], dataDir=[/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/]
+INFO  - 2015-10-14 20:05:56.529; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@16dae924
+INFO  - 2015-10-14 20:05:56.530; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index/
+INFO  - 2015-10-14 20:05:56.531; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore$12; Looking for old index directories to cleanup for core yojana_shard1_replica2 in /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/
+INFO  - 2015-10-14 20:05:56.538; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard1_replica1/ for prop overlay   after 3 attempts
+INFO  - 2015-10-14 20:05:56.539; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.540; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command; expecting overlay version 4 but my version is 3
+INFO  - 2015-10-14 20:05:56.540; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command; I already have the expected version 4 of config
+INFO  - 2015-10-14 20:05:56.540; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$Command; checkStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+INFO  - 2015-10-14 20:05:56.540; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command$1; Another reload is in progress . Not doing anything
+INFO  - 2015-10-14 20:05:56.540; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:05:56.541; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:05:56.542; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-10-14 20:05:56.542; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:8983/solr/yojana_shard1_replica2/ for prop overlay   after 3 attempts
+INFO  - 2015-10-14 20:05:56.542; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.544; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.545; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.546; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.548; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.550; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard2_replica1/ for prop overlay   after 3 attempts
+INFO  - 2015-10-14 20:05:56.550; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.561; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.562; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.563; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.563; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.RequestHandlers; Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+INFO  - 2015-10-14 20:05:56.564; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-10-14 20:05:56.565; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-10-14 20:05:56.565; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2015-10-14 20:05:56.567; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@5f79e577[yojana_shard1_replica2] main
+INFO  - 2015-10-14 20:05:56.568; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.569; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.569; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.569; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.570; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-10-14 20:05:56.570; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.600; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/yojana/_rest_managed.json
+INFO  - 2015-10-14 20:05:56.600; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.600; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-10-14 20:05:56.600; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-10-14 20:05:56.601; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-10-14 20:05:56.603; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Registered new searcher Searcher@5f79e577[yojana_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C1) Uninverting(_1(5.3.1):C1)))}
+INFO  - 2015-10-14 20:05:56.603; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.UpdateLog; Looking up max value of version field to seed version buckets
+INFO  - 2015-10-14 20:05:56.604; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.VersionInfo; Refreshing highest value of _version_ for 65536 version buckets from index
+INFO  - 2015-10-14 20:05:56.606; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.VersionInfo; Found MAX value 1515034738319949824 from Terms for _version_ in index
+INFO  - 2015-10-14 20:05:56.612; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.UpdateLog; Took 9 ms to seed version buckets with highest version 1515034738319949824
+INFO  - 2015-10-14 20:05:56.612; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.DefaultSolrCoreState; Creating new IndexWriter...
+INFO  - 2015-10-14 20:05:56.612; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.DefaultSolrCoreState; Waiting until IndexWriter is unused... core=yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.612; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.DefaultSolrCoreState; Closing old IndexWriter... core=yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.615; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-10-14 20:05:56.621; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1f05a649; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+INFO  - 2015-10-14 20:05:56.621; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 2
+INFO  - 2015-10-14 20:05:56.621; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.DefaultSolrCoreState; New IndexWriter is ready to be used.
+INFO  - 2015-10-14 20:05:56.628; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@eec297b[yojana_shard1_replica2] main
+INFO  - 2015-10-14 20:05:56.629; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.CoreContainer; replacing core: yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.629; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2]  CLOSING SolrCore org.apache.solr.core.SolrCore@64712983
+INFO  - 2015-10-14 20:05:56.630; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.cloud.ZkController; removed listener for config directory [/configs/yojana]
+INFO  - 2015-10-14 20:05:56.631; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommit maxTime=3000ms,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=503,transaction_logs_total_number=1}
+INFO  - 2015-10-14 20:05:56.631; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Closing main searcher on request.
+INFO  - 2015-10-14 20:05:56.631; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Registered new searcher Searcher@eec297b[yojana_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C1) Uninverting(_1(5.3.1):C1)))}
+INFO  - 2015-10-14 20:05:56.638; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Check for collection zkNode:yojana
+INFO  - 2015-10-14 20:05:56.638; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; Collection zkNode exists
+INFO  - 2015-10-14 20:05:56.639; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.639; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.640; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrResourceLoader; new SolrResourceLoader for directory: '/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/'
+INFO  - 2015-10-14 20:05:56.644; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.647; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command; I already have the expected version 4 of config
+INFO  - 2015-10-14 20:05:56.648; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.handler.SolrConfigHandler$Command; checkStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+INFO  - 2015-10-14 20:05:56.648; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/config/znodeVersion params={overlay=4&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:05:56.649; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Could not get expectedVersion 4 from http://192.168.0.3:7574/solr/yojana_shard1_replica1/ for prop overlay   after 4 attempts
+INFO  - 2015-10-14 20:05:56.649; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler$PerReplicaCallable; Time elapsed : 0 secs, maxWait 30
+INFO  - 2015-10-14 20:05:56.650; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.Config; loaded config solrconfig.xml with version 0 
+INFO  - 2015-10-14 20:05:56.652; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.657; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; config overlay loaded . version : 4 
+INFO  - 2015-10-14 20:05:56.657; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.ConfigSetProperties; Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/yojana', cwd=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:56.657; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; Reloading SolrCore 'yojana_shard2_replica2' using configuration from collection yojana
+INFO  - 2015-10-14 20:05:56.658; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [[yojana_shard2_replica2] ] Opening new SolrCore at [/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/], dataDir=[/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/]
+INFO  - 2015-10-14 20:05:56.658; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; current version of requestparams : -1
+INFO  - 2015-10-14 20:05:56.658; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@16dae924
+INFO  - 2015-10-14 20:05:56.659; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index/
+INFO  - 2015-10-14 20:05:56.660; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$12; Looking for old index directories to cleanup for core yojana_shard2_replica2 in /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/
+INFO  - 2015-10-14 20:05:56.663; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.SolrIndexConfig; IndexWriter infoStream solr logging is enabled
+INFO  - 2015-10-14 20:05:56.664; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; Using Lucene MatchVersion: 5.3.1
+INFO  - 2015-10-14 20:05:56.666; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-10-14 20:05:56.669; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.670; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.672; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.673; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.679; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrConfig; Loaded SolrConfig: solrconfig.xml
+INFO  - 2015-10-14 20:05:56.679; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.680; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.680; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; Reading Solr Schema from /configs/yojana/schema.xml
+INFO  - 2015-10-14 20:05:56.680; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.681; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.RequestHandlers; Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+INFO  - 2015-10-14 20:05:56.681; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-10-14 20:05:56.683; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-10-14 20:05:56.683; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2015-10-14 20:05:56.688; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@156db646[yojana_shard2_replica2] main
+INFO  - 2015-10-14 20:05:56.688; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.689; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.689; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.690; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.690; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-10-14 20:05:56.690; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.691; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/yojana/_rest_managed.json
+INFO  - 2015-10-14 20:05:56.691; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.691; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-10-14 20:05:56.692; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-10-14 20:05:56.692; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-10-14 20:05:56.694; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; [yojana_shard1_replica2] Schema name=example
+INFO  - 2015-10-14 20:05:56.694; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Registered new searcher Searcher@156db646[yojana_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-10-14 20:05:56.695; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Looking up max value of version field to seed version buckets
+INFO  - 2015-10-14 20:05:56.695; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; Refreshing highest value of _version_ for 65536 version buckets from index
+INFO  - 2015-10-14 20:05:56.695; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; No terms found for _version_, cannot seed version bucket highest value from index
+INFO  - 2015-10-14 20:05:56.695; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Could not find max version in index or recent updates, using new clock 1515038343634616320
+INFO  - 2015-10-14 20:05:56.697; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Took 2 ms to seed version buckets with highest version 1515038343634616320
+INFO  - 2015-10-14 20:05:56.698; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Creating new IndexWriter...
+INFO  - 2015-10-14 20:05:56.698; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Waiting until IndexWriter is unused... core=yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.698; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Closing old IndexWriter... core=yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.701; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard2_replica2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1f05a649; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+INFO  - 2015-10-14 20:05:56.701; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 1
+INFO  - 2015-10-14 20:05:56.702; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; New IndexWriter is ready to be used.
+INFO  - 2015-10-14 20:05:56.703; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@76e99998[yojana_shard2_replica2] main
+INFO  - 2015-10-14 20:05:56.705; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; replacing core: yojana_shard2_replica2
+INFO  - 2015-10-14 20:05:56.705; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2]  CLOSING SolrCore org.apache.solr.core.SolrCore@75a6a3d8
+INFO  - 2015-10-14 20:05:56.705; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; removed listener for config directory [/configs/yojana]
+INFO  - 2015-10-14 20:05:56.706; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommit maxTime=3000ms,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+INFO  - 2015-10-14 20:05:56.707; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Registered new searcher Searcher@76e99998[yojana_shard2_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+INFO  - 2015-10-14 20:05:56.707; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Closing main searcher on request.
+INFO  - 2015-10-14 20:05:56.768; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.SolrConfigHandler; Took 1 secs to set the property overlay to be of version 4 for collection yojana
+INFO  - 2015-10-14 20:05:56.769; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/config params={wt=javabin&version=2} status=0 QTime=641 
+INFO  - 2015-10-14 20:05:56.769; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2]  CLOSING SolrCore org.apache.solr.core.SolrCore@148a7795
+INFO  - 2015-10-14 20:05:56.769; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; removed listener for config directory [/configs/yojana]
+INFO  - 2015-10-14 20:05:56.770; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=1,autocommit maxTime=15000ms,autocommits=0,soft autocommit maxTime=3000ms,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=0,transaction_logs_total_number=0}
+INFO  - 2015-10-14 20:05:56.770; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] Closing main searcher on request.
+INFO  - 2015-10-14 20:05:56.782; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.IndexSchema; unique key field: id
+INFO  - 2015-10-14 20:05:56.812; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.818; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.schema.FileExchangeRateProvider; Reloading exchange rates from file currency.xml
+INFO  - 2015-10-14 20:05:56.824; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.ConfigSetProperties; Did not find ConfigSet properties, assuming default properties: Can't find resource 'configsetprops.json' in classpath or '/configs/yojana', cwd=/Users/deshetti/Projects/solr/server
+INFO  - 2015-10-14 20:05:56.825; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; Reloading SolrCore 'yojana_shard1_replica2' using configuration from collection yojana
+INFO  - 2015-10-14 20:05:56.825; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [[yojana_shard1_replica2] ] Opening new SolrCore at [/Users/deshetti/projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/], dataDir=[/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/]
+INFO  - 2015-10-14 20:05:56.825; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.JmxMonitoredMap; JMX monitoring is enabled. Adding Solr mbeans to JMX Server: com.sun.jmx.mbeanserver.JmxMBeanServer@16dae924
+INFO  - 2015-10-14 20:05:56.826; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; New index directory detected: old=null new=/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index/
+INFO  - 2015-10-14 20:05:56.827; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore$12; Looking for old index directories to cleanup for core yojana_shard1_replica2 in /Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/
+INFO  - 2015-10-14 20:05:56.833; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; no updateRequestProcessorChain defined as default, creating implicit default
+INFO  - 2015-10-14 20:05:56.835; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.836; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.837; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.839; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.loader.XMLLoader; xsltCacheLifetimeSeconds=60
+INFO  - 2015-10-14 20:05:56.845; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/field' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.846; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/analysis/document' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.846; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.PluginBag; requestHandler : '/terms' created with startup=lazy 
+INFO  - 2015-10-14 20:05:56.846; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.RequestHandlers; Registered paths: /admin/mbeans,/update/json/docs,/admin/luke,/export,/get,/admin/properties,/update/json,/admin/threads,/query,/analysis/field,/analysis/document,/update/csv,/select,/admin/segments,/admin/system,/replication,/config,/schema,/admin/plugins,/admin/logging,/admin/ping,/update,/admin/file,/debug/dump,/terms
+INFO  - 2015-10-14 20:05:56.847; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; Using default statsCache cache: org.apache.solr.search.stats.LocalStatsCache
+INFO  - 2015-10-14 20:05:56.848; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Hard AutoCommit: if uncommited for 15000ms; 
+INFO  - 2015-10-14 20:05:56.848; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.CommitTracker; Soft AutoCommit: if uncommited for 3000ms; 
+INFO  - 2015-10-14 20:05:56.851; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@347cd12a[yojana_shard1_replica2] main
+INFO  - 2015-10-14 20:05:56.851; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; Load collection config from:/collections/yojana
+INFO  - 2015-10-14 20:05:56.852; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.common.cloud.ZkStateReader; path=/collections/yojana configName=yojana specified config exists in ZooKeeper
+INFO  - 2015-10-14 20:05:56.852; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Setting up ZooKeeper-based storage for the RestManager with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.853; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Configured ZooKeeperStorageIO with znodeBase: /configs/yojana
+INFO  - 2015-10-14 20:05:56.853; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing RestManager with initArgs: {}
+INFO  - 2015-10-14 20:05:56.853; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Reading _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.854; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage$ZooKeeperStorageIO; Read 34 bytes from znode /configs/yojana/_rest_managed.json
+INFO  - 2015-10-14 20:05:56.854; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResourceStorage; Loaded LinkedHashMap at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/yojana
+INFO  - 2015-10-14 20:05:56.854; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.ManagedResource; Loaded initArgs {} for /rest/managed
+INFO  - 2015-10-14 20:05:56.855; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.rest.RestManager; Initializing 0 registered ManagedResources
+INFO  - 2015-10-14 20:05:56.855; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.handler.ReplicationHandler; Commits will be reserved for  10000
+INFO  - 2015-10-14 20:05:56.857; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Registered new searcher Searcher@347cd12a[yojana_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C1) Uninverting(_1(5.3.1):C1)))}
+INFO  - 2015-10-14 20:05:56.857; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Looking up max value of version field to seed version buckets
+INFO  - 2015-10-14 20:05:56.858; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; Refreshing highest value of _version_ for 65536 version buckets from index
+INFO  - 2015-10-14 20:05:56.860; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.VersionInfo; Found MAX value 1515034738319949824 from Terms for _version_ in index
+INFO  - 2015-10-14 20:05:56.862; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.UpdateLog; Took 5 ms to seed version buckets with highest version 1515034738319949824
+INFO  - 2015-10-14 20:05:56.863; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Creating new IndexWriter...
+INFO  - 2015-10-14 20:05:56.863; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Waiting until IndexWriter is unused... core=yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.863; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; Closing old IndexWriter... core=yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.868; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/Users/deshetti/Projects/solr/example/cloud/node1/solr/yojana_shard1_replica2/data/index lockFactory=org.apache.lucene.store.NativeFSLockFactory@1f05a649; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_2,generation=2}
+INFO  - 2015-10-14 20:05:56.869; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrDeletionPolicy; newest commit generation = 2
+INFO  - 2015-10-14 20:05:56.869; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DefaultSolrCoreState; New IndexWriter is ready to be used.
+INFO  - 2015-10-14 20:05:56.877; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.search.SolrIndexSearcher; Opening Searcher@29826b38[yojana_shard1_replica2] main
+INFO  - 2015-10-14 20:05:56.880; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.CoreContainer; replacing core: yojana_shard1_replica2
+INFO  - 2015-10-14 20:05:56.880; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Registered new searcher Searcher@29826b38[yojana_shard1_replica2] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(5.3.1):C1) Uninverting(_1(5.3.1):C1)))}
+INFO  - 2015-10-14 20:05:56.881; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2]  CLOSING SolrCore org.apache.solr.core.SolrCore@134d1dcb
+INFO  - 2015-10-14 20:05:56.881; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.cloud.ZkController; removed listener for config directory [/configs/yojana]
+INFO  - 2015-10-14 20:05:56.881; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.update.DirectUpdateHandler2; closing DirectUpdateHandler2{commits=0,autocommit maxTime=15000ms,autocommits=0,soft autocommit maxTime=3000ms,soft autocommits=0,optimizes=0,rollbacks=0,expungeDeletes=0,docsPending=0,adds=0,deletesById=0,deletesByQuery=0,errors=0,cumulative_adds=0,cumulative_deletesById=0,cumulative_deletesByQuery=0,cumulative_errors=0,transaction_logs_total_size=503,transaction_logs_total_number=1}
+INFO  - 2015-10-14 20:05:56.881; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] Closing main searcher on request.
+INFO  - 2015-10-14 20:07:53.364; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853273335&isShard=true&wt=javabin} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:07:53.364; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853273335&isShard=true&wt=javabin} hits=0 status=0 QTime=11 
+INFO  - 2015-10-14 20:07:53.413; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853273335&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=2 
+INFO  - 2015-10-14 20:07:53.415; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=81 
+INFO  - 2015-10-14 20:07:53.770; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=64 
+INFO  - 2015-10-14 20:07:55.483; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=10&version=2&q=&defType=edismax&qf=name+text&NOW=1444853275396&isShard=true&wt=javabin} hits=0 status=0 QTime=16 
+INFO  - 2015-10-14 20:07:55.483; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=10&version=2&q=&defType=edismax&qf=name+text&NOW=1444853275396&isShard=true&wt=javabin} hits=0 status=0 QTime=16 
+INFO  - 2015-10-14 20:07:55.484; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=&defType=edismax&qf=name+text&start=0&rows=10&wt=json} hits=0 status=0 QTime=87 
+INFO  - 2015-10-14 20:07:55.735; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853275731&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:07:55.740; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853275731&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:07:55.741; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=9 
+INFO  - 2015-10-14 20:07:57.385; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853277381&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:07:57.398; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=16 
+INFO  - 2015-10-14 20:07:57.516; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853277512&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:07:57.521; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853277512&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:07:57.523; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:07:59.290; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=id&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=1&version=2&q=101&NOW=1444853279245&isShard=true&wt=javabin} hits=0 status=0 QTime=40 
+INFO  - 2015-10-14 20:07:59.290; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=id&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=1&version=2&q=101&NOW=1444853279245&isShard=true&wt=javabin} hits=1 status=0 QTime=41 
+INFO  - 2015-10-14 20:07:59.294; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=101&df=id&distrib=false&shards.purpose=64&NOW=1444853279245&start=0&ids=101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=1&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:07:59.295; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=101&df=id&start=0&rows=1&wt=json} hits=1 status=0 QTime=49 
+INFO  - 2015-10-14 20:07:59.429; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=9 
+INFO  - 2015-10-14 20:08:04.654; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=9 
+INFO  - 2015-10-14 20:08:04.781; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:08:06.864; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=id&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=1&version=2&q=100&NOW=1444853286861&isShard=true&wt=javabin} hits=1 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:06.895; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=100&df=id&distrib=false&shards.purpose=64&NOW=1444853286861&start=0&ids=100&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=1&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:08:06.896; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=100&df=id&start=0&rows=1&wt=json} hits=1 status=0 QTime=35 
+INFO  - 2015-10-14 20:08:07.020; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853287015&isShard=true&wt=javabin} hits=2 status=0 QTime=2 
+INFO  - 2015-10-14 20:08:07.024; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853287015&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:08:07.025; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:08:09.147; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853289143&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:09.147; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853289143&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:09.150; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853289143&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:08:09.151; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=8 
+INFO  - 2015-10-14 20:08:09.259; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853289256&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:09.259; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853289256&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:09.263; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853289256&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:08:09.264; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=8 
+INFO  - 2015-10-14 20:08:10.727; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=101&df=id&start=0&rows=1&wt=json} hits=1 status=0 QTime=9 
+INFO  - 2015-10-14 20:08:10.840; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853290837&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:10.840; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853290837&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:08:10.844; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853290837&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:08:10.845; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=8 
+INFO  - 2015-10-14 20:18:41.195; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=test&defType=edismax&qf=name+text&start=0&rows=10&wt=json} hits=0 status=0 QTime=131 
+INFO  - 2015-10-14 20:18:41.362; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853921360&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:41.362; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853921360&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:41.389; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853921360&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:18:41.390; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=30 
+INFO  - 2015-10-14 20:18:44.065; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853924061&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:44.065; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853924061&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:44.069; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853924061&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:18:44.070; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=8 
+INFO  - 2015-10-14 20:18:44.197; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853924194&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:44.208; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444853924194&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:44.213; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853924194&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=1 
+INFO  - 2015-10-14 20:18:44.214; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=20 
+INFO  - 2015-10-14 20:18:48.319; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=10&version=2&q=overseas&defType=edismax&qf=name+text&NOW=1444853928312&isShard=true&wt=javabin} hits=0 status=0 QTime=2 
+INFO  - 2015-10-14 20:18:48.340; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=10&version=2&q=overseas&defType=edismax&qf=name+text&NOW=1444853928312&isShard=true&wt=javabin} hits=1 status=0 QTime=22 
+INFO  - 2015-10-14 20:18:48.347; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&shards.purpose=64&start=0&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=10&version=2&q=overseas&defType=edismax&qf=name+text&NOW=1444853928312&ids=100&isShard=true&wt=javabin} status=0 QTime=2 
+INFO  - 2015-10-14 20:18:48.348; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=overseas&defType=edismax&qf=name+text&start=0&rows=10&wt=json} hits=1 status=0 QTime=35 
+INFO  - 2015-10-14 20:18:48.497; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444853928494&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:18:48.503; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444853928494&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:18:48.504; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:20:33.128; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444854033125&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:20:33.160; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=34 
+INFO  - 2015-10-14 20:20:34.998; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=overseas&defType=edismax&qf=name+text&start=0&rows=10&wt=json} hits=1 status=0 QTime=35 
+INFO  - 2015-10-14 20:20:35.078; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:20:36.633; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444854036630&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:20:36.638; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444854036630&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:20:36.639; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=9 
+INFO  - 2015-10-14 20:22:04.359; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=84 
+INFO  - 2015-10-14 20:22:04.825; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=3&version=2&q=*:*&NOW=1444854124823&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:22:04.825; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444854124823&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:22:04.829; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444854124823&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:22:04.830; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=7 
+INFO  - 2015-10-14 20:22:06.871; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444854126868&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:22:06.875; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444854126868&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:22:06.914; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=46 
+INFO  - 2015-10-14 20:22:07.055; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=10 
+INFO  - 2015-10-14 20:22:18.586; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=10&version=2&q=overseas&defType=edismax&qf=name+text&NOW=1444854138516&isShard=true&wt=javabin} hits=1 status=0 QTime=1 
+INFO  - 2015-10-14 20:22:18.592; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&shards.purpose=64&start=0&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=10&version=2&q=overseas&defType=edismax&qf=name+text&NOW=1444854138516&ids=100&isShard=true&wt=javabin} status=0 QTime=1 
+INFO  - 2015-10-14 20:22:18.593; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=overseas&defType=edismax&qf=name+text&start=0&rows=10&wt=json} hits=1 status=0 QTime=77 
+INFO  - 2015-10-14 20:22:18.773; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=9 
+INFO  - 2015-10-14 20:22:20.605; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={df=id&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard2_replica2/|http://192.168.0.3:7574/solr/yojana_shard2_replica1/&rows=1&version=2&q=100&NOW=1444854140601&isShard=true&wt=javabin} hits=0 status=0 QTime=0 
+INFO  - 2015-10-14 20:22:20.611; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=100&df=id&start=0&rows=1&wt=json} hits=1 status=0 QTime=9 
+INFO  - 2015-10-14 20:22:20.746; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={df=text&distrib=false&fl=id&fl=score&shards.purpose=4&start=0&fsv=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&version=2&q=*:*&NOW=1444854140743&isShard=true&wt=javabin} hits=2 status=0 QTime=0 
+INFO  - 2015-10-14 20:22:20.751; [c:yojana s:shard1 r:core_node1 x:yojana_shard1_replica2] org.apache.solr.core.SolrCore; [yojana_shard1_replica2] webapp=/solr path=/select params={q=*:*&df=text&distrib=false&shards.purpose=64&NOW=1444854140743&start=0&ids=100,101&isShard=true&shard.url=http://192.168.0.3:8983/solr/yojana_shard1_replica2/|http://192.168.0.3:7574/solr/yojana_shard1_replica1/&rows=3&wt=javabin&version=2} status=0 QTime=0 
+INFO  - 2015-10-14 20:22:20.751; [c:yojana s:shard2 r:core_node2 x:yojana_shard2_replica2] org.apache.solr.core.SolrCore; [yojana_shard2_replica2] webapp=/solr path=/select params={q=*:*&start=0&rows=3&wt=json} hits=2 status=0 QTime=8 
